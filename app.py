@@ -57,7 +57,7 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
-st.markdown("""
+
 col1, col2 = st.columns([1,4])
 
 with col1:
@@ -68,13 +68,15 @@ with col2:
     <h1 style='margin-bottom:0px;color:#d63384;'>
     VƯƠNG TRANG SPA AI
     </h1>
+
     <p style='font-size:18px;color:#666;'>
     Trang tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách.
     </p>
     """, unsafe_allow_html=True)
 
 st.divider()
-""", unsafe_allow_html=True)
+
+st.divider()
 
 if not api_key:
     st.error("Chưa tìm thấy OPENAI_API_KEY trong file .env.")
