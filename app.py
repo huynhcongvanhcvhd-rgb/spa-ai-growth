@@ -13,12 +13,63 @@ st.set_page_config(
     page_icon="💆‍♀️",
     layout="wide"
 )
+st.markdown("""
+<style>
 
-st.title("👩‍⚕️ VƯƠNG TRANG SPA AI")
+.main {
+    background-color: #fafafa;
+}
 
-st.write(
-    "TRANG tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách."
-)
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+.hero-box {
+    background: linear-gradient(135deg,#fff5f2,#ffffff);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ffe3db;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2d2d2d;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg,#ff6b6b,#ff8e72);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<div class="hero-box">
+
+<div class="hero-title">
+👩‍⚕️ VƯƠNG TRANG SPA AI
+</div>
+
+<div class="hero-subtitle">
+Trang tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách.
+</div>
+
+</div>
+""", unsafe_allow_html=True)
 
 if not api_key:
     st.error("Chưa tìm thấy OPENAI_API_KEY trong file .env.")
