@@ -58,17 +58,22 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 st.markdown("""
-<div class="hero-box">
+col1, col2 = st.columns([1,4])
 
-<div class="hero-title">
-👩‍⚕️ VƯƠNG TRANG SPA AI
-</div>
+with col1:
+    st.image("vuongtrang.png", width=120)
 
-<div class="hero-subtitle">
-Trang tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách.
-</div>
+with col2:
+    st.markdown("""
+    <h1 style='margin-bottom:0px;color:#d63384;'>
+    VƯƠNG TRANG SPA AI
+    </h1>
+    <p style='font-size:18px;color:#666;'>
+    Trang tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách.
+    </p>
+    """, unsafe_allow_html=True)
 
-</div>
+st.divider()
 """, unsafe_allow_html=True)
 
 if not api_key:
