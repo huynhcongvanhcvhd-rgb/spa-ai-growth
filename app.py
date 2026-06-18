@@ -14,8 +14,11 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("💆‍♀️ SPA AI GROWTH")
-st.caption("Công cụ AI giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách.")
+st.title("👩‍⚕️ VƯƠNG TRANG SPA AI")
+
+st.write(
+    "TRANG tạo ra công cụ này giúp chủ Spa biết hôm nay đăng gì, viết gì và quay gì để tăng cơ hội có khách."
+)
 
 if not api_key:
     st.error("Chưa tìm thấy OPENAI_API_KEY trong file .env.")
